@@ -1,0 +1,23 @@
+def operation(n,a,b) :
+  if n=="Addition" or n=="addition" :
+    return a+b;
+  elif n=="Subraction" or n=="subraction"  :
+    return a-b;
+  elif n=="Multiplication" or n=="multiplication" :
+    return a*b;
+  elif n=="Division" or n=="division":
+    if a>b :
+      return a/b;
+    else :
+      return b/a;
+while True :
+  a = int(input("Enter the first  number: "))
+  b = int(input("Enter the second number: "))
+  print("Operations avaliable:-  ")
+  print("1.Addition")
+  print("2.Subraction")
+  print("3.Multiplication")
+  print("4.Division")
+  choice = (input("Enter your choice of operation:- "))
+  print(f"The {choice} of the numbers {a} and {b} is:- ",operation(choice,a,b))
+  print("\n")
